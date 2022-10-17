@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+		<meta charset="utf-8">
+		<link href="public/css/login.css" rel='stylesheet' type='text/css' />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="public/js/jquery.min.js"></script>
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body>
+	 <!-----start-main---->
+	 <div class="main">
+		<div class="login-form">
+			<h1>Member Login</h1>
+					<div class="head">
+						<img src="public/image/user.png"  alt=""/>
+					</div>
+				<form method="post" >
+						<input type="text" name="account" id="account" value="Account" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account';}" >
+						<input type="password" name="password" id="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+                        <input type="text" name="identity" id="identity" value="Identity" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Identity';}"/>
+						<div class="submit">
+							<input type="button" name="submit"  value="登录" onClick="login()">
+					    </div>	
+                        <p><a href="view/function/home/register.html">Sign up for a new account !</a></p>
+				</form>
+			</div>
+   <script src="public/js/tool/login.js"></script>
+</body>
+</html>

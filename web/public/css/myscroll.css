@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+.myscroll {
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.myscroll #myscrollbox {
+	display: block;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height:100%;
+}
+.myscroll ul {
+	display: block;
+	float: left;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height:100%;
+	width:100%;
+}
+.myscroll ul li {
+	display: block;
+	float: left;
+	margin: 0 0 0 8%;
+	width:23%;
+	height:100%;
+}
+
+.myscroll ul li a {
+	display: block;
+	float: left;
+	padding: 0;
+	position: relative;
+	color: #333;
+	width:100%;
+	height:100%;
+	box-shadow:inset 0px 0px 10px rgba(255,255,255,0.5),0px 0px 15px rgba(75,75,75,0.3); 
+}
+.myscroll a .intro {
+	position: absolute;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(255, 255, 250, 20);
+	padding: 0 10px;
+	width:100%;
+}
+.myscroll a .intro h5 {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	padding: 0 42px 0 10px;
+	height: 40px;
+	width: 130px;
+	line-height: 40px;
+	border-bottom: 1px solid rgba(215, 0, 15, .2);
+}
+.myscroll a .intro p {
+	font-size: 13px;
+	line-height: 20px;
+	margin: 7px 15px;
+	height: 20px;
+	overflow: hidden;
+}
+.myscroll a .intro {
+	bottom: -61px;
+}
+.myscroll a:hover .intro {
+	bottom: 0px;
+}
+.myscroll,
+.myscroll a:hover .intro,
+.myscroll a .intro,
+.myscroll .myscrollbox {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="../../../public/css/register.css" rel='stylesheet' type='text/css' />
+<title>学生修改</title>
+<style>
+.login-form {
+	background:#eee;
+	width: 30%;
+	margin:6% auto 4% auto;
+ 	position: relative;
+ 	-webkit-border-radius: 0.4em;
+	-o-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+}
+.main p {
+text-align:left;
+margin-bottom: 3%;
+font-family: 'Open Sans', sans-serif;
+font-size:20px;
+}
+ input[type="text"], input[type="password"]{
+	text-align:left;
+	position: relative;
+	width:92%;
+	padding:3%;
+	background:#D3D3D3;
+	margin-bottom: 6%;
+	font-family: 'Open Sans', sans-serif;
+	color: #676767;
+	font-weight:600;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	border:1px solid #DED6D6;
+	-webkit-appearance:none;
+}
+ input[type="text"]:hover, input[type="password"]:hover{
+ 	border:1px solid #949494;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-o-transition:0.5s;
+	-ms-transition:	0.5s;
+ 	
+ }
+</style>
+<script src='../../../public/js/jquery.min.js'></script>
+<script>
+function GetRequest() {
+var url = location.search; //获取url中"?"符后的字串
+var theRequest = new Object();
+ if (url.indexOf("?") != -1) {
+       var str = url.substr(1);
+       strs = str.split("&");
+       for (var i = 0; i < strs.length; i++) {
+           theRequest[strs[i].split("=")[0]] = decodeURIComponent(strs[i].split("=")[1]);
+       }
+   }
+   return theRequest;
+}
+</script>
+</head>
+<body>
+      <div class="main">
+		  <div class="login-form">
+               <h1>学生信息修改</h1>
+               <form method="post" >
+                        <p>姓名</p>
+						<input type="password" name="password" id="student_name"  >
+                        <p>学号</p>
+						<input type="text" name="account" id="student_id"  >
+                        <p>班号</p>
+                        <input type="text" name="identity" id="class_id"  />
+                        <p>年龄</p>
+                        <input type="text" name="identity" id="student_age" />
+                        <p>性别</p>
+                        <input type="text" name="identity" id="student_sex" />
+                        <p>卡号</p>
+                        <input type="text" name="identity" id="student_card"  />
+						<div class="submit" style="margin:4% 0 0 0">
+							<input type="button" name="submit"  value="修改" onClick="student()">
+					    </div>	
+                        
+				</form>
+           </div>
+       </div>
+</body>
+<script src="../../../public/js/tool/update.js"></script>
+</html>

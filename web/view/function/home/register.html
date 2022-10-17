@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+		<meta charset="utf-8">
+		<link href="../../../public/css/register.css" rel='stylesheet' type='text/css' />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="../../../public/js/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	 <!-----start-main---->
+	 <div class="main">
+		<div class="login-form">
+			<h1>Welcom to my webside</h1>
+				<form method="post">
+						<input type="text" name="account" id="account" value="Account" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Account';}" >
+						<input type="password" name="password" id="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+                        <input type="text" name="identity" id="identity" value="Identity" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Identity';}"/>
+                        <input type="text" name="class_id" id="class_id" value="Class" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Class';}"/>
+                        <input type="text" name="student_id" id="student_id" value="Student" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Student';}"/>
+						<div class="submit">
+							<input type="button" onclick="register()" value="注册" >
+					    </div>	
+				</form>
+			</div>
+   <script src="../../../public/js/tool/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>外出登记</title>
+<style type="text/css">
+.content
+{
+   height:540px; 
+   width:80%; 
+   background-size:100% 100%;
+   margin-left:auto; 
+   margin-right:auto; 
+   margin-top:3%;
+   padding-left:10px;
+   overflow:auto;
+   box-shadow: #ccc 0px 0px 10px;
+}
+table {
+	width: 90%;
+	border: 1px solid #cad9ea;
+	color: #666;
+	margin: 40px auto;
+	border-collapse: collapse;/*border-collapse:collapse合并内外边距(去除表格单元格默认的2个像素内外边距*/	
+}	
+thead{
+	background-color: #f5fafe;
+}			
+th,td {
+	height: 40px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #cad9ea;
+}		
+th {
+	color: #666;
+	font-weight: normal;
+}		
+tr {
+	color: #666;
+}
+</style>
+<script src="../../../public/js/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+   <table class="table" id="table">
+		  <thead>
+		    <th width="10%" scope="col">姓名</th>
+		    <th width="14%" scope="col">学号</th>
+            <th width="9%" scope="col">性别</th>
+            <th width="9%" scope="col">体温</th>
+            <th width="12%" scope="col">班号</th>
+            <th width="14%" scope="col">日期</th>
+            <th width="18%" scope="col">地点</th>
+           </thead>
+	  </table>
+</div>
+<script src="../../../public/js/tool/t_register.js"></script>
+</body>
+</html>

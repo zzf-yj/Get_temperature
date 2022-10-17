@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="../../../public/css/register.css" rel='stylesheet' type='text/css' />
+<title>学生修改</title>
+<script src='../../../public/js/jquery.min.js'></script>
+<script>
+function GetRequest() {
+var url = location.search; //获取url中"?"符后的字串
+var theRequest = new Object();
+ if (url.indexOf("?") != -1) {
+       var str = url.substr(1);
+       strs = str.split("&");
+       for (var i = 0; i < strs.length; i++) {
+           theRequest[strs[i].split("=")[0]] = decodeURIComponent(strs[i].split("=")[1]);
+       }
+   }
+   return theRequest;
+}
+</script>
+<style>
+.main p {
+text-align:left;
+margin-bottom: 3%;
+font-family: 'Open Sans', sans-serif;
+font-size:20px;
+}
+ input[type="text"], input[type="password"]{
+	text-align:left;
+	position: relative;
+	width:92%;
+	padding:3%;
+	background:#D3D3D3;
+	margin-bottom: 6%;
+	font-family: 'Open Sans', sans-serif;
+	color: #676767;
+	font-weight:600;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	border:1px solid #DED6D6;
+	-webkit-appearance:none;
+}
+ input[type="text"]:hover, input[type="password"]:hover{
+ 	border:1px solid #949494;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-o-transition:0.5s;
+	-ms-transition:	0.5s;
+ 	
+ }
+</style>
+</head>
+<body>
+      <div class="main">
+		  <div class="login-form">
+          <h1>班级信息修改</h1>
+               <form method="post" >
+						<p>班号</p>
+                        <input type="text" name="account" id="class_id"  >
+                        <p>班名</p>
+						<input type="text" name="class_name" id="class_name" >
+                        <p>人数</p>
+                        <input type="text" name="class_num" id="class_num" />
+                        <p>班主任编号</p>
+                        <input type="text" name="teacher_id" id="teacher_id" />
+						<div class="submit" style="margin:4% 0 0 0">
+							<input type="button" name="submit"  value="修改" onClick="update_class()">
+					    </div>	
+				</form>
+           </div>
+       </div>
+</body>
+<script src="../../../public/js/tool/update.js"></script>
+</html>

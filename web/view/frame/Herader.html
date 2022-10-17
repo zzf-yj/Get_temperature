@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 0.3rem;
+	background:#333951;
+}
+.hearder {
+	height: 100%;
+	width: 100%;
+	/* [disabled]margin-left: 5%; */
+	position: relative;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,800&display=swap");
+.nav {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  padding: 10px 20px;
+  z-index: 20;
+  margin-left: 80%;
+  
+}
+.nav a {
+  position: relative;
+  padding: 0.8em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #888;
+  z-index: 3;
+}
+.nav .slide1,
+.nav .slide2 {
+  position: absolute;
+  display: inline-block;
+  height: 0.4em;
+  box-shadow: 1px 1px 0 #666;
+  -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1.05);
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  bottom: 0px;
+  height: 100%;
+}
+.nav .slide1 {
+  background-color: #eeeeee30;
+  z-index: 2;
+}
+.nav .slide2 {
+  opacity: 0;
+  background-color: transparent;
+  border: 1px solid #eeeeee70;
+  z-index: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.herader_search {
+	height: 29px;
+	width: 68%;
+	/* [disabled]float: left; */
+	position: absolute;
+	/* [disabled]background: #6FF; */
+	z-index: 20;
+	margin-left: 18%;
+	padding: 20px 0;
+	top: -2px;
+}
+/*搜索框2*/
+.herader_search form {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+}
+.herader_search input, .herader_search button {
+	border-radius: 3px;
+	border: none;
+    outline: none;
+}
+.herader_search input {
+    background: #fff;
+	width: 100%;
+    height: 42px;
+    padding-left: 13px;
+}
+.herader_search button {
+    height: 26px;
+    width: 26px;
+    top: 8px;
+    right: 8px;
+    background: #F15B42;
+	cursor: pointer;
+    position: absolute;
+}
+.herader_search button:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<div class="hearder">
+    
+   <div class="herader_search">
+       <form id="form1" name="f"  action="https://www.baidu.com/s" target="_top">
+            <input type="text" name="wd" id="kw" placeholder="请输入您要搜索的内容...">
+            <button type="submit" name="button" id="su"></button>
+        </form>
+   </div> 
+  </div>
+  
+<script src="../../public/js/jquery.min.js"></script>
+<script src="../../public/js/script.js"></script>
+</body>
+</html>
